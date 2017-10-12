@@ -6,11 +6,100 @@
 // ===============================================================================
 var friendsArray = [
   {
-    customerName: "Ahmed",
-    customerEmail: "ahmed@example.com",
-    customerID: "afhaque89",
-    phoneNumber: "000-000-0000"
+    "name": "Bart Simpson",
+    "photo": "/../images/bartSimpson.png",
+    "scores": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1  
+      ]
+
+   
   }
+
+  {
+    "name": "Homer Simpson",
+    "photo": "/../images/homerSimpson.png",
+    "scores": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2  
+      ]
+
+   
+  }
+
+  {
+    "name": "Selma and Patty Bouvier",
+    "photo": "/../images/margeSisters.png",
+    "scores": [
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3,
+    3  
+      ]
+
+   
+  }
+
+    {
+    "name": "Millhouse",
+    "photo": "/../images/millhouse.jpg",
+    "scores": [
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4  
+      ]
+
+   
+  }
+
+  {
+    "name": "Skinner",
+    "photo": "/../images/skinner.png",
+    "scores": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5,
+    5  
+      ]
+
+   
+  }
+
 ];
 // Note how we export the array. This makes it accessible to other files using require.
 module.exports = friendsArray;
