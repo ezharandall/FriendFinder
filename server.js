@@ -4,6 +4,8 @@
 // ==============================================================================
 var express = require("express");
 var bodyParser = require("body-parser");
+var path = require("path");
+
 // ==============================================================================
 // EXPRESS CONFIGURATION
 // This sets up the basic properties for our express server
@@ -31,4 +33,12 @@ require("./app/routing/htmlRoutes")(app);
 // ==============================================================================
 app.listen(PORT, function() {
   console.log("App listening on PORT: " + PORT);
+});
+
+// Basic route that sends the user first to the AJAX Page
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname, "home.html"));
+});
+app.get("/add", function(req, res) {
+  res.sendFile(path.join(__dirname, "survey.html"));
 });
